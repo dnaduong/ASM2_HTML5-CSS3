@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+
+    <style>
+        body{
+            background-color: beige;
+        }
+        
+        h3{
+            color: green;
+            text-align: center;
+        }
+
+        .map{
+            width: 50%;
+            float:left;
+            margin-left: 45px;
+        }
+
+        .map>iframe{
+            width: 870px;
+            height: 540px;
+        }
+
+        .login{
+            width: 40%;
+            float: right;
+        }
+
+        form {
+            width: 400px;
+            border: 1px solid gray;
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgb(246, 187, 206);
+            color: maroon;
+            background-color: rgb(173, 230, 181);
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        #inp {
+            width: 100%;
+            border-radius: 15px;
+            height: 30px;
+            background-color: rgb(199, 242, 215);
+        }
+
+        #gioitinh {
+            border: 1px solid rgb(148, 148, 221);
+            border-radius: 10px;
+        }
+
+        #fs {
+            border-radius: 10px;
+        }
+
+        #bt {
+            border-radius: 15px;
+        }
+
+        #bt:hover {
+            background-color: rgb(15, 120, 39);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Liên hệ - Góp ý</h3>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1FkMpO8Xp_iFMCbPWNqFQmirEZZRoazHq&ehbc=2E312F"></iframe>
+        </div>
+
+        <div class="login">
+            <form>
+                <h3>ĐĂNG KÝ</h3>
+                <hr>
+                <label>Tên đăng ký: </label><br>
+                <input type="text" placeholder="Nhập tên đăng nhập" id="inp"><br>
+                <br>
+        
+                <label>Mật khẩu: </label><br>
+                <input type="password" placeholder="Nhập mật khẩu" id="inp"><br>
+                <br>
+        
+                <fieldset id="fs">
+                    <legend>Giới tính: </legend>
+                    <label> <input type="radio" name="gt1">Nam</label>
+                    <label> <input type="radio" name="gt1">Nữ</label>
+                    <label> <input type="radio" name="gt1">Khác</label>
+                </fieldset>
+                <br>
+        
+                <label>Ghi chú: </label><br>
+                <textarea cols="51" rows="9"></textarea>
+                <br><br>
+        
+                <input type="checkbox">
+                <label>Ghi nhớ mật khẩu</label><br>
+        
+                <hr>
+        
+                <center>
+                    <button id="bt" type="submit">Đăng ký</button>
+                    <input type="button" value="Đăng nhập" disabled>
+                </center>
+        
+            </form>
+        </div>
+    </div>
+</body>
+</html>
